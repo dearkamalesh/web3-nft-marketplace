@@ -1,10 +1,7 @@
-import { useLocation } from "react-router";
 import { Menu } from "antd";
 import { NavLink } from "react-router-dom";
 
 function MenuItems() {
-  const { pathname } = useLocation();
-
   return (
     <Menu
       theme="light"
@@ -16,7 +13,7 @@ function MenuItems() {
         width: "100%",
         justifyContent: "center",
       }}
-      defaultSelectedKeys={[pathname]}
+      defaultSelectedKeys={["nft"]}
     >
       <Menu.Item key="nftMarket">
         <NavLink to="/nftMarket">🔍 Explore</NavLink>
